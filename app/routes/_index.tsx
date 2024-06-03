@@ -2,40 +2,65 @@ import type { MetaFunction } from "@remix-run/node";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "lui's homepage" },
+    { name: "description", content: "Welcome to my homepage!" },
   ];
 };
 
+function Header() {
+  return(
+    <>
+    <h1 className="text-3xl font-bold underline">
+    lui's website
+  </h1>
+
+  <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
+    <ul>
+      <li>
+        <a
+          href="/about"
+          rel="noreferrer"
+        >
+          about me
+        </a>
+      </li>
+      <li>
+        <a
+          href="/projects"
+          rel="noreferrer"
+        >
+          projects
+        </a>
+      </li>
+      <li>
+        <a
+          href="/games"
+          rel="noreferrer"
+        >
+          games
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="/words"
+          rel="noreferrer"
+        >
+          words
+        </a>
+      </li>
+
+    </ul>
+  </div>
+  </>
+  )
+  
+}
+
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>Welcome to Remix</h1>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/blog"
-            rel="noreferrer"
-          >
-            15m Quickstart Blog Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/jokes"
-            rel="noreferrer"
-          >
-            Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
-        </li>
-      </ul>
-    </div>
+    <>
+    <Header />
+    </>
   );
 }
