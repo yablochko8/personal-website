@@ -1,4 +1,4 @@
-import { Header } from "./_index";
+import { Header, Socials } from "./_index";
 
 export default function About() {
     return (
@@ -29,7 +29,7 @@ export default function About() {
 
         <img src="./images/elm.jpg" width="200" />
 
-
+        <Socials />
         </div>
     );
   }

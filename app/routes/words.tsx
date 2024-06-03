@@ -1,4 +1,4 @@
-import { Header } from "./_index";
+import { Header, Socials } from "./_index";
 
 export default function About() {
     return (
@@ -8,6 +8,7 @@ export default function About() {
         <p>
             This is my writing.
         </p>
+        <Socials />
         </div>
     );
   }

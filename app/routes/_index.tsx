@@ -38,12 +38,22 @@ export function Header() {
 export function Socials() {
   return(
     <>
+      <h1> Socials: </h1>
+      <li>
+        <a href="https://github.com/yablochko8/">
+          Github
+        </a>
+      </li>
+      <li>
       <a href="https://www.linkedin.com/in/luismyth/">
         LinkedIn
       </a>
+      </li>
+      <li>
       <a href="https://x.com/yablochko/">
         Twitter / x dot com
       </a>
+      </li>
   </>
   )
   
