@@ -10,7 +10,7 @@ export const meta: MetaFunction = () => {
 function HeaderButton(props){
   return(
     <a href={"/" + props.target}>
-      <button className="bg-blue-300 hover:bg-red-900 text-white font-bold py-2 px-4 rounded">
+      <button className="bg-blue-500 hover:bg-yellow-500 text-white font-bold py-2 px-4 rounded">
         {props.title}
       </button>
     </a>
@@ -20,15 +20,30 @@ function HeaderButton(props){
 export function Header() {
   return(
     <>
-    <h1 className="text-3xl font-bold underline">
-    lui's website
-  </h1>
-  <HeaderButton target="about" title="about" />
+  <a href="./">
+    <h1 className="text-3xl font-bold">
+      lui's website
+    </h1>
+  </a>
+  <HeaderButton target="about" title="about me" />
   <HeaderButton target="projects" title="projects" />
   <HeaderButton target="games" title="games" />
   <HeaderButton target="words" title="words" />
+  </>
+  )
+  
+}
 
 
+export function Socials() {
+  return(
+    <>
+      <a href="https://www.linkedin.com/in/luismyth/">
+        LinkedIn
+      </a>
+      <a href="https://x.com/yablochko/">
+        Twitter / x dot com
+      </a>
   </>
   )
   
@@ -37,7 +52,12 @@ export function Header() {
 export default function Index() {
   return (
     <>
-    <Header />
+      <Header />
+      <p>
+        Welcome to my website.
+      </p>
+
+      <Socials />
     </>
   );
 }
