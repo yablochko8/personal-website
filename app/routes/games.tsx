@@ -1,11 +1,12 @@
+import { Header } from "./_index";
 
 export default function About() {
     return (
         <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-    
-        <h2> About </h2>
+        <Header />
+        <h2> Games </h2>
         <p>
-            Hello testing here.
+            This is a page all about games.
         </p>
         </div>
     );
